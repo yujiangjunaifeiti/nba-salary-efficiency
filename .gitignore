@@ -10,13 +10,14 @@ env/
 # Jupyter Notebook
 .ipynb_checkpoints/
 
-# Data files (keep raw data small)
-data/*.csv
-data/*.json
-!data/.gitkeep
+# Data files (sample data is committed for demo purposes)
+# Large API-fetched datasets should be in data/raw/ and ignored:
+data/raw/*_api.csv
+data/raw/*_full.csv
 
-# Charts
+# Charts output
 charts/*.png
+!charts/example_*.png
 !charts/.gitkeep
 
 # IDE
